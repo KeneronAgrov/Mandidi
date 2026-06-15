@@ -1,8 +1,13 @@
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance { get; private set; }
+
+    [SerializeField] private AudioMixer audioMixer;
 
     [Header("All Mandalas")]
     public MandalaData[] allMandalas;
@@ -20,6 +25,22 @@ public class GameManager : MonoBehaviour {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        ApplySavedSettings();
+    }
+
+    private void ApplySavedSettings() {
+
+
+        // Idioma - esto necesita coroutine
+        StartCoroutine(ApplySavedLocale());
+    }
+
+    private IEnumerator ApplySavedLocale() {
+        yield return LocalizationSettings.InitializationOperation;
+        int savedIndex = PlayerPrefs.GetInt("SelectedLanguage", 0);
+        var locales = LocalizationSettings.AvailableLocales.Locales;
+        if (savedIndex < locales.Count)
+            LocalizationSettings.SelectedLocale = locales[savedIndex];
     }
 
     // Called from ModePopup (Gallery)
@@ -41,4 +62,10 @@ public class GameManager : MonoBehaviour {
     // Scene loaders for plain buttons
     public void LoadGallery() => SceneManager.LoadScene("Gallery");
     public void ExitApp() => Application.Quit();
+
+    void Start() {
+        float volume = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        float db = Mathf.Log10(Mathf.Max(volume, 0.001f)) * 20f;
+        audioMixer.SetFloat("MasterVolume", db);
+    }
 }

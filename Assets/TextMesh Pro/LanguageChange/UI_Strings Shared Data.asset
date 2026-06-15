@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI_Strings Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: UI_Strings
+  m_TableCollectionNameGuidString: 956f663d027872c489dbf45f832110e7
+  m_Entries:
+  - m_Id: 86017855488
+    m_Key: 'Settings
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2059504996352
+    m_Key: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2689996967936
+    m_Key: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2849145638912
+    m_Key: 'Volume
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3036786216960
+    m_Key: 'High Contrast
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3155535351808
+    m_Key: 'Back
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3426592247808
+    m_Key: 'Artist
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4186071650304
+    m_Key: Draw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4307274452992
+    m_Key: Paint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4464908980224
+    m_Key: Gallery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5566345793536
+    m_Key: Easy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5767206817792
+    m_Key: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6027962503168
+    m_Key: Hard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18245387046912
+    m_Key: Exit
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1192129341315088652
+  references:
+    version: 2
+    RefIds:
+    - rid: 1192129341315088652
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1781528385563
