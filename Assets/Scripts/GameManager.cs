@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Localization.Settings;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance { get; private set; }
@@ -33,6 +35,13 @@ public class GameManager : MonoBehaviour {
 
         // Idioma - esto necesita coroutine
         StartCoroutine(ApplySavedLocale());
+        // High Contrast
+        bool highContrast = PlayerPrefs.GetInt("HighContrast", 0) == 1;
+        Volume globalVolume = FindFirstObjectByType<Volume>();
+        if (globalVolume != null && globalVolume.profile.TryGet(out ColorAdjustments ca)) {
+            ca.contrast.value = highContrast ? 60f : 0f;
+            ca.saturation.value = highContrast ? 40f : 0f;
+        }
     }
 
     private IEnumerator ApplySavedLocale() {

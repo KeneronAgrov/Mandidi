@@ -333,7 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   audioMixer: {fileID: 24100000, guid: b5abf1087cca1a141a3499685e181db7, type: 2}
   allMandalas:
-  - {fileID: 11400000, guid: f69edd6d5c643e34ea60f69c76f89786, type: 2}
+  - {fileID: 11400000, guid: 4a491c79cd07c2b44859b78d8d778f04, type: 2}
 --- !u!4 &1872175441
 Transform:
   m_ObjectHideFlags: 0

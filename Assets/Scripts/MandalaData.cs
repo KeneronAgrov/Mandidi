@@ -8,4 +8,6 @@ public class MandalaData : ScriptableObject {
     public Difficulty difficulty;
     public Sprite thumbnail;
     public Color[] colors;
+    public Sprite mandalaColor;    // referencia oculta, Read/Write enabled
+    public Sprite mandalaBW;       // lo que ve el usuario
 }
