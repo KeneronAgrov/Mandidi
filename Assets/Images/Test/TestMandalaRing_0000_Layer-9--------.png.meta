@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 4c855fdda76c1604dbca25044a2ad956
+guid: 206d090ae5cbca145bc6a92cda257921
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7641950137697835761
-    second: TestMandalaColorRing3_0
+      213: -8589340165341998437
+    second: TestMandalaRing_0000_Layer-9--------_0
+  - first:
+      213: 8424735540293037362
+    second: TestMandalaRing_0000_Layer-9--------_1
+  - first:
+      213: 2580609827344220068
+    second: TestMandalaRing_0000_Layer-9--------_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +30,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TestMandalaColorRing3_0
+      name: TestMandalaRing_0000_Layer-9--------_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1078
-        height: 1078
+        x: 43
+        y: 1100
+        width: 641
+        height: 463
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +160,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f05e54ba6d652f590800000000000000
-      internalID: -7641950137697835761
+      spriteID: b929bcdb0a88cc880800000000000000
+      internalID: -8589340165341998437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestMandalaRing_0000_Layer-9--------_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1040
+        width: 653
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d66c5765caae470800000000000000
+      internalID: 8424735540293037362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestMandalaRing_0000_Layer-9--------_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1028
+        width: 564
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4affbbe17fa20d320800000000000000
+      internalID: 2580609827344220068
       vertices: []
       indices: 
       edges: []
@@ -164,7 +214,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +224,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TestMandalaColorRing3_0: -7641950137697835761
+      TestMandalaRing_0000_Layer-9--------_0: -8589340165341998437
+      TestMandalaRing_0000_Layer-9--------_1: 8424735540293037362
+      TestMandalaRing_0000_Layer-9--------_2: 2580609827344220068
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -82,6 +82,18 @@ MonoBehaviour:
     m_Localized: Exit
     m_Metadata:
       m_Items: []
+  - m_Id: 1529035294265344
+    m_Localized: Download
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529306749620224
+    m_Localized: Replay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529406179790848
+    m_Localized: Random
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

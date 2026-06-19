@@ -74,6 +74,18 @@ MonoBehaviour:
     m_Localized: Salir
     m_Metadata:
       m_Items: []
+  - m_Id: 1529035294265344
+    m_Localized: Descarga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529306749620224
+    m_Localized: Rejugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1529406179790848
+    m_Localized: Aleatorio
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

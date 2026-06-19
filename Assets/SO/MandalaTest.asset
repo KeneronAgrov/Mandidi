@@ -19,6 +19,17 @@ MonoBehaviour:
   - {r: 0.14901961, g: 0.13333334, b: 0.8078432, a: 1}
   - {r: 0.13333334, g: 0.8117648, b: 0.23137257, a: 1}
   - {r: 0.8000001, g: 0.12941177, b: 0.20000002, a: 1}
-  - {r: 0.7960785, g: 0.7960785, b: 0.7960785, a: 1}
+  mandalaColorWatermark: {fileID: 1704060799699416548, guid: 87f9eab9e54971b48bca0265e789a152, type: 3}
+  mandalaBWWatermark: {fileID: -7641950137697835761, guid: 4c855fdda76c1604dbca25044a2ad956, type: 3}
   mandalaColor: {fileID: 21300000, guid: 075413aeca4129d49929f299335f2b49, type: 3}
   mandalaBW: {fileID: 21300000, guid: e77470b8a0808264496bfbd04b2e6d5f, type: 3}
+  rings:
+  - {fileID: 21300000, guid: 440844398fb500f4a854a905e078c6dd, type: 3}
+  - {fileID: 21300000, guid: 3dcfaf2a10c1e124a91002f8a7f4770c, type: 3}
+  - {fileID: 21300000, guid: 5421aabd402037d4e80efa9ef6737517, type: 3}
+  - {fileID: 21300000, guid: 015642d8bc9a6dc4cb0770732e601a72, type: 3}
+  - {fileID: 21300000, guid: f91026e8143ceae46ae7d2d3381f6437, type: 3}
+  - {fileID: 21300000, guid: db3ddd315f2fb90479eb42be3d7840d3, type: 3}
+  - {fileID: 21300000, guid: 4007028897e208143941ed14e554e35f, type: 3}
+  - {fileID: 21300000, guid: 03e0e2ef0940f73439c8757f5b21b31b, type: 3}
+  - {fileID: 21300000, guid: 206d090ae5cbca145bc6a92cda257921, type: 3}
