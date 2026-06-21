@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 731bf859cb7442e489a5572f7a514c5c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7392659684882016412
+    second: CompleteMandala_0001_Layer-8--------_0
+  - first:
+      213: -5952108544597664302
+    second: CompleteMandala_0001_Layer-8--------_1
+  - first:
+      213: 6314486288511105616
+    second: CompleteMandala_0001_Layer-8--------_2
+  - first:
+      213: -596123017084966958
+    second: CompleteMandala_0001_Layer-8--------_3
+  - first:
+      213: -8698819902409797097
+    second: CompleteMandala_0001_Layer-8--------_4
+  - first:
+      213: -216619819252566979
+    second: CompleteMandala_0001_Layer-8--------_5
+  - first:
+      213: -3808504230593448757
+    second: CompleteMandala_0001_Layer-8--------_6
+  - first:
+      213: 4108206892298126588
+    second: CompleteMandala_0001_Layer-8--------_7
+  - first:
+      213: 9086183905204594749
+    second: CompleteMandala_0001_Layer-8--------_8
+  - first:
+      213: 8912085237190916915
+    second: CompleteMandala_0001_Layer-8--------_9
+  - first:
+      213: -1155158982779670775
+    second: CompleteMandala_0001_Layer-8--------_10
+  - first:
+      213: 4430285313257418440
+    second: CompleteMandala_0001_Layer-8--------_11
+  - first:
+      213: 5374437634397274787
+    second: CompleteMandala_0001_Layer-8--------_12
+  - first:
+      213: -3691338824886104037
+    second: CompleteMandala_0001_Layer-8--------_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_0
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 831
+        width: 203
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46791414f2ff76990800000000000000
+      internalID: -7392659684882016412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 827
+        width: 136
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd50b670dcd56da0800000000000000
+      internalID: -5952108544597664302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 761
+        width: 180
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a77c5e2df81a750800000000000000
+      internalID: 6314486288511105616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 651
+        width: 136
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7673c36452ab7f0800000000000000
+      internalID: -596123017084966958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 549
+        width: 54
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71214c71365974780800000000000000
+      internalID: -8698819902409797097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_5
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 522
+        width: 81
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34342e0c696efcf0800000000000000
+      internalID: -216619819252566979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 389
+        width: 48
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4b7e1a499752bc0800000000000000
+      internalID: -3808504230593448757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 423
+        width: 25
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4cd3ff668430930800000000000000
+      internalID: 4108206892298126588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 305
+        width: 54
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3867910f1c981e70800000000000000
+      internalID: 9086183905204594749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_9
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 268
+        width: 81
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b74c21e461eab70800000000000000
+      internalID: 8912085237190916915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_10
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 173
+        width: 136
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fe054860d08ffe0800000000000000
+      internalID: -1155158982779670775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_11
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 116
+        width: 180
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cea65e05098b7d30800000000000000
+      internalID: 4430285313257418440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_12
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 91
+        width: 203
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a28db1bd86d59a40800000000000000
+      internalID: 5374437634397274787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CompleteMandala_0001_Layer-8--------_13
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 119
+        width: 136
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b105e0575eab5ccc0800000000000000
+      internalID: -3691338824886104037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CompleteMandala_0001_Layer-8--------_0: -7392659684882016412
+      CompleteMandala_0001_Layer-8--------_1: -5952108544597664302
+      CompleteMandala_0001_Layer-8--------_10: -1155158982779670775
+      CompleteMandala_0001_Layer-8--------_11: 4430285313257418440
+      CompleteMandala_0001_Layer-8--------_12: 5374437634397274787
+      CompleteMandala_0001_Layer-8--------_13: -3691338824886104037
+      CompleteMandala_0001_Layer-8--------_2: 6314486288511105616
+      CompleteMandala_0001_Layer-8--------_3: -596123017084966958
+      CompleteMandala_0001_Layer-8--------_4: -8698819902409797097
+      CompleteMandala_0001_Layer-8--------_5: -216619819252566979
+      CompleteMandala_0001_Layer-8--------_6: -3808504230593448757
+      CompleteMandala_0001_Layer-8--------_7: 4108206892298126588
+      CompleteMandala_0001_Layer-8--------_8: 9086183905204594749
+      CompleteMandala_0001_Layer-8--------_9: 8912085237190916915
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

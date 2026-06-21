@@ -681,7 +681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GalleryManager
   allMandalas:
-  - {fileID: 11400000, guid: f69edd6d5c643e34ea60f69c76f89786, type: 2}
+  - {fileID: 11400000, guid: 4a491c79cd07c2b44859b78d8d778f04, type: 2}
   cardPrefab: {fileID: 7218133009015859206, guid: e2cfcf7db63f9a744b683330076cca57, type: 3}
   gridContent: {fileID: 1373178976}
   popup: {fileID: 497469004}

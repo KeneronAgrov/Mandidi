@@ -33,3 +33,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4007028897e208143941ed14e554e35f, type: 3}
   - {fileID: 21300000, guid: 03e0e2ef0940f73439c8757f5b21b31b, type: 3}
   - {fileID: 21300000, guid: 206d090ae5cbca145bc6a92cda257921, type: 3}
+  completedRings:
+  - {fileID: 21300000, guid: 6f26e2a93dc098845ac3837e9f57aca8, type: 3}
+  - {fileID: 21300000, guid: e5daddc23ab280f468bd91564b5c0447, type: 3}
+  - {fileID: 21300000, guid: f3726f828f5369a4c987f32a25604978, type: 3}
+  - {fileID: 21300000, guid: 7ad088fe26599a4438168b8db83fe2aa, type: 3}
+  - {fileID: 21300000, guid: c621a3e444ceaac41912f7a2e45a4324, type: 3}
+  - {fileID: 21300000, guid: 20356da5a463bf24fbcc61256f9274c4, type: 3}
+  - {fileID: 21300000, guid: fcfc9307fe41eb24a95edcd7c4c1ea3d, type: 3}
+  - {fileID: 21300000, guid: 731bf859cb7442e489a5572f7a514c5c, type: 3}
+  - {fileID: 21300000, guid: e3b6a1b2e25f0f040a225205d73a6455, type: 3}
+  ringPaths:
+  - waypoints:
+    - {x: 0.80925924, y: 0.3625}
+    - {x: 0.7583333, y: 0.32604167}

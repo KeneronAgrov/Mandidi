@@ -13,4 +13,6 @@ public class MandalaData : ScriptableObject {
     public Sprite mandalaColor;    // referencia oculta, Read/Write enabled
     public Sprite mandalaBW;       // lo que ve el usuario
     public Sprite[] rings; // en orden, ring 0 primero
+    public Sprite[] completedRings; // PNG completo de cada ring, Read/Write enabled
+    public DrawRingPath[] ringPaths;
 }

@@ -2,53 +2,41 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-// Controls the post-completion panel: shows the finished mandala and handles all exit actions.
-// Activates itself by subscribing to CompletionTracker.OnCompleted.
-public class CompletionPanel : MonoBehaviour {
+public class DrawCompletionPanel : MonoBehaviour {
     public GameObject panelRoot;
-    public RawImage fullMandalaDisplay; // shows the completed mandala sprite
+    public RawImage completedMandalaDisplay;
     public Button btnRepeat;
     public Button btnRandom;
     public Button btnGallery;
     public Button btnDownload;
     public Button btnExit;
 
-    private Sprite _completionSprite; // thumbnail shown on the panel when complete
-    private Sprite _watermarkSprite;  // artist's original — saved on download (not the painted version)
+    private Sprite _watermarkSprite;
 
-
-    public DrawCompletionPanel completionPanel;
-
-
-    public void Initialize(CompletionTracker tracker, Sprite completionSprite, Sprite watermarkSprite) {
-        _completionSprite = completionSprite;
-        _watermarkSprite = watermarkSprite;
-
+    public void Initialize() {
         panelRoot.SetActive(false);
-
         if (btnRepeat) btnRepeat.onClick.AddListener(OnRepeat);
         if (btnRandom) btnRandom.onClick.AddListener(OnRandom);
         if (btnGallery) btnGallery.onClick.AddListener(OnGallery);
         if (btnDownload) btnDownload.onClick.AddListener(OnDownload);
         if (btnExit) btnExit.onClick.AddListener(OnExit);
-
-        tracker.OnCompleted += Show;
     }
 
-    private void Show() {
-        if (fullMandalaDisplay != null && _completionSprite != null)
-            fullMandalaDisplay.texture = _completionSprite.texture;
+    public void Show(Sprite completedSprite, Sprite watermarkSprite) {
+        _watermarkSprite = watermarkSprite;
+        if (completedMandalaDisplay != null && completedSprite != null)
+            completedMandalaDisplay.texture = completedSprite.texture;
         panelRoot.SetActive(true);
     }
 
     private void OnRepeat() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    private void OnRandom() => GameManager.Instance.LoadRandomPaint();
+    private void OnRandom() => GameManager.Instance.LoadRandomDraw();
     private void OnGallery() => GameManager.Instance.LoadGallery();
     private void OnExit() => GameManager.Instance.LoadMainMenu();
 
     private void OnDownload() {
         if (_watermarkSprite == null) {
-            Debug.LogWarning("mandalaColorWatermark no asignado en MandalaData.");
+            Debug.LogWarning("watermarkSprite no asignado en MandalaData.");
             return;
         }
 
@@ -58,7 +46,6 @@ public class CompletionPanel : MonoBehaviour {
         System.IO.File.WriteAllBytes(path, png);
 
 #if UNITY_ANDROID && !UNITY_EDITOR
-        // Notify the Android media scanner so the file appears in the gallery immediately
         using (var sc  = new AndroidJavaClass("android.media.MediaScannerConnection"))
         using (var up  = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
         using (var ctx = up.GetStatic<AndroidJavaObject>("currentActivity"))
