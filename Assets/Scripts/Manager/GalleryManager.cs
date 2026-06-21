@@ -6,10 +6,12 @@ public class GalleryManager : MonoBehaviour {
     public GameObject cardPrefab;
     public Transform gridContent;
     public ModePopup popup;
+    public Toggle completedToggle;
 
     private Difficulty _currentDifficulty = Difficulty.Easy;
 
     void Start() {
+        completedToggle.onValueChanged.AddListener(_ => Refresh());
         ShowDifficulty(Difficulty.Easy);
     }
 
@@ -21,14 +23,16 @@ public class GalleryManager : MonoBehaviour {
 
     private void ShowDifficulty(Difficulty difficulty) {
         _currentDifficulty = difficulty;
+        Refresh();
+    }
 
-        // Clear existing cards
+    private void Refresh() {
         foreach (Transform child in gridContent)
             Destroy(child.gameObject);
 
-        // Spawn a card for each mandala matching the selected difficulty
         foreach (MandalaData data in allMandalas) {
-            if (data.difficulty != difficulty) continue;
+            if (data.difficulty != _currentDifficulty) continue;
+            if (completedToggle.isOn && ProgressManager.Instance.IsCompleted(data.mandalaName)) continue;
 
             GameObject card = Instantiate(cardPrefab, gridContent);
             card.GetComponent<MandalaCard>().Setup(data, popup);

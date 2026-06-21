@@ -2,27 +2,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-// Controls the post-completion panel: shows the finished mandala and handles all exit actions.
-// Activates itself by subscribing to CompletionTracker.OnCompleted.
 public class CompletionPanel : MonoBehaviour {
     public GameObject panelRoot;
-    public RawImage fullMandalaDisplay; // shows the completed mandala sprite
+    public RawImage fullMandalaDisplay;
     public Button btnRepeat;
     public Button btnRandom;
     public Button btnGallery;
     public Button btnDownload;
     public Button btnExit;
 
-    private Sprite _completionSprite; // thumbnail shown on the panel when complete
-    private Sprite _watermarkSprite;  // artist's original — saved on download (not the painted version)
+    private Sprite _completionSprite;
+    private Sprite _watermarkSprite;
+    private string _mandalaName;
 
-
-    public DrawCompletionPanel completionPanel;
-
-
-    public void Initialize(CompletionTracker tracker, Sprite completionSprite, Sprite watermarkSprite) {
+    public void Initialize(CompletionTracker tracker, Sprite completionSprite, Sprite watermarkSprite, string mandalaName) {
         _completionSprite = completionSprite;
         _watermarkSprite = watermarkSprite;
+        _mandalaName = mandalaName;
 
         panelRoot.SetActive(false);
 
@@ -36,6 +32,7 @@ public class CompletionPanel : MonoBehaviour {
     }
 
     private void Show() {
+        ProgressManager.Instance.CompleteMandala(_mandalaName);
         if (fullMandalaDisplay != null && _completionSprite != null)
             fullMandalaDisplay.texture = _completionSprite.texture;
         panelRoot.SetActive(true);
@@ -47,18 +44,12 @@ public class CompletionPanel : MonoBehaviour {
     private void OnExit() => GameManager.Instance.LoadMainMenu();
 
     private void OnDownload() {
-        if (_watermarkSprite == null) {
-            Debug.LogWarning("mandalaColorWatermark no asignado en MandalaData.");
-            return;
-        }
-
+        if (_watermarkSprite == null) { Debug.LogWarning("mandalaColorWatermark no asignado."); return; }
         byte[] png = _watermarkSprite.texture.EncodeToPNG();
         string fileName = "mandidi_" + System.DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
         string path = System.IO.Path.Combine(Application.persistentDataPath, fileName);
         System.IO.File.WriteAllBytes(path, png);
-
 #if UNITY_ANDROID && !UNITY_EDITOR
-        // Notify the Android media scanner so the file appears in the gallery immediately
         using (var sc  = new AndroidJavaClass("android.media.MediaScannerConnection"))
         using (var up  = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
         using (var ctx = up.GetStatic<AndroidJavaObject>("currentActivity"))

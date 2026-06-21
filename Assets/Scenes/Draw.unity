@@ -1611,19 +1611,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1480625153}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PaintSceneManager, Assembly-CSharp
-        m_MethodName: OnBackPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1480625153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2452,12 +2440,12 @@ RectTransform:
   - {fileID: 702496938}
   - {fileID: 864191907}
   - {fileID: 1958086724}
-  - {fileID: 711709161}
   - {fileID: 149769869}
   - {fileID: 953416504}
   - {fileID: 476022496}
   - {fileID: 1205664913}
   - {fileID: 1047528430}
+  - {fileID: 711709161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

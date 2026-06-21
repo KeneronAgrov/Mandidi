@@ -6,6 +6,7 @@ public class MandalaCard : MonoBehaviour {
     public Image thumbnail;
     public TextMeshProUGUI mandalaName;
     public ModePopup popup;
+    public GameObject completedBadge;
 
     private MandalaData _data;
 
@@ -14,12 +15,14 @@ public class MandalaCard : MonoBehaviour {
         popup = modePopup;
         thumbnail.sprite = data.thumbnail;
         mandalaName.text = data.mandalaName;
+
+        if (completedBadge != null)
+            completedBadge.SetActive(ProgressManager.Instance.IsCompleted(data.mandalaName));
+
         GetComponent<Button>().onClick.AddListener(OnCardTapped);
     }
 
     private void OnCardTapped() {
-        // open the Draw/Paint popup and pass _data to it
-        // we'll wire this up when we build the popup
         popup.Show(_data);
     }
 }

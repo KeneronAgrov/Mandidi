@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 1872175440}
   - component: {fileID: 1872175442}
   - component: {fileID: 1872175443}
+  - component: {fileID: 1872175444}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -463,6 +464,18 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 7caa702f10d94514f8216f1f82669d80, type: 2}
+--- !u!114 &1872175444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872175439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d7c2d5db336b24a8921d2d0c518194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProgressManager
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

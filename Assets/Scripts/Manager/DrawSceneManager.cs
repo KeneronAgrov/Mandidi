@@ -29,7 +29,6 @@ public class DrawSceneManager : MonoBehaviour {
     private int _erasedPixels;
     private bool _ringComplete = false;
 
-
     void Start() {
         _data = GameManager.Instance.SelectedMandala;
         completionPanel.Initialize();
@@ -86,8 +85,9 @@ public class DrawSceneManager : MonoBehaviour {
 
     void Update() {
         if (_ringComplete) return;
-        if (!TryGetPointerPosition(out Vector2 pointerPos )) return;
+        if (!TryGetPointerPosition(out Vector2 pointerPos)) return;
         guideAnimator?.NotifyInput();
+
         Vector2 localPoint;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(
             _currentOverlay.GetComponent<RectTransform>(), pointerPos, Camera.main, out localPoint
@@ -145,6 +145,7 @@ public class DrawSceneManager : MonoBehaviour {
 
         _currentRingIndex++;
         if (_currentRingIndex >= _data.rings.Length) {
+            ProgressManager.Instance.CompleteMandala(_data.mandalaName);
             completionPanel.Show(_data.thumbnail, _data.mandalaBWWatermark);
             return;
         }
